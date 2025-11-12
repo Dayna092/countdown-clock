@@ -1,0 +1,63 @@
+
+.countdown-clock-circle {
+    display: block;
+    text-align: center;
+}
+
+.circle-unit {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle-unit svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    display: block;
+    margin: 0 auto;
+}
+
+circle.bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 10;
+}
+
+circle.progress {
+    fill: none;
+    stroke: #2196f3;
+    stroke-width: 10;
+    transition: stroke-dashoffset 0.5s linear;
+}
+
+.circle-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.circle-label {
+    position: static;
+    margin-top: 6px;
+}
+
+.circle-label .unit {
+    font-size: 12px;
+}
+
+
+
+.countdown-clock-circle.countdown-circle-pulse .circle-unit {
+    animation: countdown-circle-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes countdown-circle-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
