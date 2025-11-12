@@ -1,0 +1,13 @@
+.countdown-clock-frontend {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.countdown-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.countdown-output {
+  font-size: 22px;
+  font-family: sans-serif;
+}
